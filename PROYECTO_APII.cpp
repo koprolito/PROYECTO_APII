@@ -242,8 +242,9 @@ int main(){
             n=n->prox;
         }
         n=p;
-
-        cout<<"pulse cualquier tecla para iniciar la carrera"<<endl;cin>>res;
+        system("cls");
+        cout<<"pulse cualquier tecla para iniciar la carrera"<<endl;
+        system("pause");
         system("cls");
         
         Carre(n,cant,posUlt);
