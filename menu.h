@@ -3,8 +3,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include <windows.h>
-
-
 using namespace std;
 
 void hacerLineasHorizontales(int n, char c){
@@ -49,14 +47,15 @@ void hacerLineasVerticales(int nEspacios, int nLineas, string opciones[],int lon
 
 void pantallaInicio(){
 
-    system("cls");
+    //system("cls");
+    cout << "\n\n\n\n\n\n\n\n";
     string bienvenido[] = {"BIENVENIDO", "A", "PEPE KART 23"};
 
     hacerLineasHorizontales(80,'-');
     hacerLineasVerticales(80, 7, bienvenido, 3, '|');
     hacerLineasHorizontales(80,'-');
     cout << "\n\n\n\n\n\n\n\n";
-    system("pause");
+    //system("pause");
 
 
 };
@@ -65,7 +64,7 @@ void abusador(){
     cout << "\n\nError, opcion no valida\n";
     cout << "Volvera a la pantalla de inicio en 5 segundos\n\n";
     Sleep(5000);
-    system("pause");
+    //system("pause");
 }
 
 int principal(){
@@ -74,7 +73,8 @@ int principal(){
 
     while (op < 0 || op > 2){
         string menuP[] = {"1. JUGAR", "2. VER CARROS", "0. SALIR"};
-        system("cls");
+        //system("cls");
+        cout << "\n\n\n\n\n\n\n\n\n";
         hacerLineasHorizontales(80,'-');
         hacerLineasVerticales(80, 7, menuP, 3, '|');
         hacerLineasHorizontales(80,'-');
@@ -92,7 +92,8 @@ int principal(){
 void salir(){
 
     string chao[]{"GRACIAS", "POR", "JUGAR", "PEPE KART 23", " :D"};
-    system("cls");
+    //system("cls");
+    cout << "\n\n\n\n\n\n\n\n";
     hacerLineasHorizontales(80,'-');
     hacerLineasVerticales(80, 9, chao, 5, '|');
     hacerLineasHorizontales(80,'-');
